@@ -24,7 +24,11 @@ body {
   color: var(--background-color);
 }
 
-.headline {
-  font-size: var(--headline-text-size);
+.paragraph {
+  font-size: var(--secondary-text-size);
   color: var(--secondary-color);
+}
+
+.paragraph--center {
+  text-align: center;
 }
