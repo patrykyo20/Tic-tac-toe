@@ -44,3 +44,40 @@ body {
 .main__board {
   margin-top: 54px;
 }
+
+.form {
+  display: grid;
+  justify-content: center;
+  gap: 36px;
+}
+
+.form__container {
+  display: flex;
+  gap: 24px;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-size: var(--headline-text-size);
+  color: var(--secondary-color);
+}
+
+.input {
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid var(--secondary-color);
+}
+
+.input:focus {
+  outline: 1.5px solid var(--secondary-color);
+}
+
+.button {
+  background-color: var(--secondary-color);
+  color: var(--background-color);
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+}

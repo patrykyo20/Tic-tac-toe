@@ -1,40 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tic Tac Toe</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header class="header">
-    <nav>
-      <h1 class="title">Tic Tac Toe</h1>
-    </nav>
-  </header>
-  <main class="main">
-    <p class="paragraph paragraph--center">Welcome to Tic Tac Toe game!</p>
-    <form class="form main__form">
-      <label for="player1">
-        First player
-        <input type="text" placeholder="first player" id="player1">
-      </label>
-      <label for="player2">
-        Second player
-        <input type="text" placeholder="first player" id="player2">
-      </label>
-    </form>
-    <div class="board">
-      <div class="board__box"></div>
-      <div class="board__box"></div>
-      <div class="board__box"></div>
-      <div class="board__box"></div>
-      <div class="board__box"></div>
-      <div class="board__box"></div>
-      <div class="board__box"></div>
-      <div class="board__box"></div>
-      <div class="board__box"></div>
-    </div>
-  </main>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <h1 class="title">Tic Tac Toe</h1>
+      </nav>
+    </header>
+    <main class="main">
+      <p class="paragraph paragraph--center">Welcome to Tic Tac Toe game!</p>
+      <form class="form main__form">
+        <div class="form__container">
+          <label for="player1" class="label">
+            First player
+            <input
+              type="text"
+              placeholder="first player"
+              id="player1"
+              class="input"
+            />
+          </label>
+          <label for="player2" class="label">
+            Second player
+            <input
+              type="text"
+              placeholder="first player"
+              id="player2"
+              class="input"
+            />
+          </label>
+        </div>
+        <button type="submit" class="button">Send users</button>
+      </form>
+      <div class="board">
+        <div class="board__box"></div>
+        <div class="board__box"></div>
+        <div class="board__box"></div>
+        <div class="board__box"></div>
+        <div class="board__box"></div>
+        <div class="board__box"></div>
+        <div class="board__box"></div>
+        <div class="board__box"></div>
+        <div class="board__box"></div>
+      </div>
+    </main>
+  </body>
 </html>
