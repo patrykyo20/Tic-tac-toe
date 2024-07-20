@@ -32,3 +32,15 @@ body {
 .paragraph--center {
   text-align: center;
 }
+
+.main {
+  padding: 96px;
+}
+
+.main__form {
+  margin-top: 72px;
+}
+
+.main__board {
+  margin-top: 54px;
+}
