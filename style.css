@@ -9,3 +9,8 @@
   --secondary-color: #4535c1;
   --background-color: #f5f7f8;
 }
+
+.header {
+  padding: 30px 40px;
+  background-color: var(--primary-color);
+}
