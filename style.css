@@ -75,9 +75,16 @@ body {
 }
 
 .button {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   color: var(--background-color);
   border: none;
   border-radius: 5px;
   padding: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+  font-size: var(--headline-text-size);
+}
+
+.button:hover {
+  background-color: var(--secondary-color);
 }
