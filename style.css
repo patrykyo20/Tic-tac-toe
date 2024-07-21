@@ -100,4 +100,9 @@ body {
 .board__box {
   border: 1px solid var(--secondary-color);
   height: 18vh;
+  font-size: var(--headline-text-size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-color);
 }
