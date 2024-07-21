@@ -88,3 +88,16 @@ body {
 .button:hover {
   background-color: var(--secondary-color);
 }
+
+.board {
+  padding: 0 128px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 24px;
+}
+
+.board__box {
+  border: 1px solid var(--secondary-color);
+  height: 18vh;
+}
