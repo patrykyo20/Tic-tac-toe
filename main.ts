@@ -31,4 +31,9 @@ function onFormSent(e: Event, players: Players): void {
   }
 }
 
+function clearForm() {
+  const form: HTMLFormElement = document.querySelector(".form");
+  form.style.display = "none";
+}
+
 init();
