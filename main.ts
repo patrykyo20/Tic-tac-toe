@@ -63,6 +63,53 @@ function setUser(players: Players, turn: number) {
 
 function fillBox(event, players: Players, turn: number) {
   event.target.innerHTML = players[turn].symbol;
+
+  checkWin(players);
+}
+
+function checkWin(players: Players) {
+  const board = document.querySelectorAll(".board__box");
+
+  if (
+    (board[0].innerHTML === board[4].innerHTML &&
+      board[4].innerHTML === board[8].innerHTML &&
+      board[8].innerHTML !== "") ||
+    (board[2].innerHTML === board[4].innerHTML &&
+      board[4].innerHTML === board[6].innerHTML &&
+      board[6].innerHTML !== "")
+  ) {
+    displayWinner(players, board[4].innerHTML);
+  }
+
+  for (let i = 0; i < 3; i++) {
+    const rowSize = i * 3;
+
+    if (
+      board[rowSize].innerHTML === board[rowSize + 1].innerHTML &&
+      board[rowSize + 1].innerHTML === board[rowSize + 2].innerHTML &&
+      board[rowSize].innerHTML !== ""
+    ) {
+      displayWinner(players, board[rowSize].innerHTML);
+    }
+
+    if (
+      board[rowSize].innerHTML === board[rowSize + 3].innerHTML &&
+      board[rowSize + 3].innerHTML === board[rowSize + 6].innerHTML &&
+      board[rowSize].innerHTML !== ""
+    ) {
+      displayWinner(players, board[rowSize].innerHTML);
+    }
+  }
+}
+
+function displayWinner(players: Players, value: string) {
+  const paragraph = document.querySelector(".paragraph");
+
+  if (value === players[0].symbol) {
+    paragraph.innerHTML = `${players[0].name} is Winner!`;
+  } else if (value === players[1].symbol) {
+    paragraph.innerHTML = `${players[1].name} is Winner!`;
+  }
 }
 
 init();
