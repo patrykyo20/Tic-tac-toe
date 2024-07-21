@@ -49,6 +49,7 @@ function startGame(players) {
     }
 
     setUser(players, turn);
+    fillBox(event, players, turn);
   });
 
   setUser(players, turn);
@@ -58,6 +59,10 @@ function setUser(players: Players, turn: number) {
   const paragraph = document.querySelector(".paragraph");
 
   paragraph.innerHTML = `Now it's ${players[turn].name}'s turn`;
+}
+
+function fillBox(event, players: Players, turn: number) {
+  event.target.innerHTML = players[turn].symbol;
 }
 
 init();
