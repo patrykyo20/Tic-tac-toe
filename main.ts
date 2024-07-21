@@ -15,15 +15,15 @@ function init() {
     },
   ];
 
-  form.addEventListener("submit", (e) => onFormSent(e, players));
+  form.addEventListener("submit", (event) => onFormSent(event, players));
 }
 
-function onFormSent(e: Event, players: Players): void {
-  e.preventDefault();
+function onFormSent(event: Event, players: Players): void {
+  event.preventDefault();
 
-  if (e.target[0].value && e.target[1].value) {
-    players[0].name = e.target[0].value;
-    players[1].name = e.target[1].value;
+  if (event.target[0].value && event.target[1].value) {
+    players[0].name = event.target[0].value;
+    players[1].name = event.target[1].value;
   }
 
   if (players[0].name && players[1].name) {
